@@ -15,11 +15,7 @@ The implementation scheme returned by this generator is hardly inspired in the e
   - [Changelog](#changelog-0.1)
   - [Expected in version 0.2](#expected-in-version-0.2)
 - [Viper files structure](#viper-files-structure)
-- [How to install vipergen](#how-to-install-vipergen)
 - [How to generate a VIPER module with a given name?](#how-to-generate-viper-module-with-a-given-name?)
-- [Developer tips](#developer-tips)
-  - [Update the gem](#update-the-gem)
-  - [Add a new template](#add-a-new-template)
 - [Resources](#resources)
 
 ## Features
@@ -75,12 +71,6 @@ The implementation scheme returned by this generator is hardly inspired in the e
 +-- Protocols
 |   +-- VIPERProtocols.swift
 ```
-## How to install vipergen ?
-You can install it easily as using the gem. With ruby installed in your OSX execute:
-```bash
-sudo gem install vipergen
-```
-If everything were right, you should have now the vipergem command available in your system console
 
 ## How to generate a VIPER module with a given name?
 You have just to execute the following command
@@ -88,30 +78,6 @@ You have just to execute the following command
 vipergen generate MyFirstViperModule --path=~/myproject/shared
 ```
 And then the files structure will be automatically created. Don't forget to add this folder to your project dragging it into the XCode/Appcode inspector
-
-## Developer tips
-### Update the gem 
-When the gem is updated it has to be reported to the gem repository. I followed this tutorial http://amaras-tech.co.uk/article/43/Creating_executable_gems that basically says that once you have your gem ready execute:
-```bash
-gem build vipergen.gemspec
-gem install vipergen-0.1.gem
-gem push vipergen-0.1.gem
-```
-Then you'll be asked for your credentials in order to make the update in the repo (http://guides.rubygems.org/publishing/)
-
-### Add a new template
-Are you interested in VIPER and you would like to contribute with this gem adding new templates? Feel free to do it. It's pretty easy. You've just to:
-- Create a folder inside `templates` with the name of your template
-- You'll have to create inside the templates in both languages, Swift and Objective-C (get inspired from existing templates)
-- Use the word VIPER where you want the name to be replaced in.
-- Remember to add the file viperspec.yml with the description of your template as below:
-```yaml
-author: pepi
-author_email: pepibumur@gmail.com
-template_description: Default template with the simplest structure using VIPER
-updated_at: 2014-08-24
-```
-- Report it as a PR in this repo updating the gem version in Gemspec.
 
 ## Resources
 - Rspec documentation: http://rubydoc.info/gems/rspec-expectations/frames

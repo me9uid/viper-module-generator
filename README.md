@@ -1,4 +1,4 @@
-Viper Module Generator
+Viper Module Generator (Edited to work with Swift 3)
 ======================
 [![Code Climate](https://codeclimate.com/github/teambox/viper-module-generator/badges/gpa.svg)](https://codeclimate.com/github/teambox/viper-module-generator)
 [![Build Status](https://travis-ci.org/teambox/viper-module-generator.svg?branch=master)](https://travis-ci.org/teambox/viper-module-generator)

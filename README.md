@@ -1,8 +1,5 @@
 Viper Module Generator (Edited to work with Swift 3)
 ======================
-
-![image](http://www.objc.io/images/issue-13/2014-06-07-viper-intro.jpg)
-
 Gem to generate VIPER modules to use them in your Objective-C/Swift projects
 The implementation scheme returned by this generator is hardly inspired in the example and post of Objc.io, http://www.objc.io/issue-13/viper.html .
 
